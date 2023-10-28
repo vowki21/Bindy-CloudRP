@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap');
+@font-face {
+  font-family: "Pricedown";
+  src: url("../fonts/pdown.ttf");
+}
+
+@font-face {
+  font-family: "bankgothic";
+  src: url("../fonts/bankgothic.ttf");
+}
+
+* {
+  margin: 0;
+}
+
+html {
+  overflow: hidden;
+}
+
+#hud {
+  position: absolute;
+  font-family: "Pricedown";
+  font-size: 20px;
+  color: white;
+  padding: 4px;
+  text-align: right;
+  top: 35;
+  right: 10;
+}
+
+#hud img {
+  vertical-align: middle;
+}
+
+#inventory_notifications {
+  font-family: 'Poppins' !important;
+  position: absolute;
+  right: 40;
+  bottom: 60;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #FFF;
+}
+
+.menu {
+  font-family: "Open Sans", sans-serif;
+  min-width: 400px;
+  min-height: 250px;
+  color: #fff;
+  position: absolute;
+  left: 40;
+  top: 0;
+}
+
+.menu .head {
+  font-family: "Open Sans", sans-serif;
+  font-size: 28px;
+  padding: 10px;
+  background: #1a1a1a;
+  border-bottom: 3px solid #bc1635;
+  border-radius: 10px 10px 0 0;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  -o-border-radius: 10px 10px 0 0;
+  box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+  -webkit-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+  -moz-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+  -o-box-shadow: inset 0px 1px 0 rgba(255, 255, 255, 0.28);
+  box-shadow: 1px 1px 10px 4px rgba(0, 0, 0, 0.4);
+}
+
+.menu .head span {
+  font-family: "Pricedown";
+  font-size: 28px;
+  padding-left: 15px;
+  padding-top: 6px;
+}
+
+.menu .menu-items .menu-item {
+  font-family: "Open Sans", sans-serif;
+  font-size: 14px;
+  height: 40px;
+  display: block;
+  background-color: #f1f1f1;
+  box-shadow: inset 1px 0px 0px 1px #b8b8b8;
+  height: 32px;
+  line-height: 32px;
+  color: #3a3a3a;
+  text-align: center;
+}
+
+.menu .menu-items .menu-item.selected {
+  background-color: #ccc;
+}
+
+/* slots */
+
+.slots {
+  position: absolute;
+  display: block;
+  bottom: 40%;
+  right: 0.5%;
+
+  /* animation  */
+  /* transition: 2s;
+  -webkit-animation-name: fadeOutRight;
+  -webkit-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both; */
+}
+
+.single-slot {
+  width: 64px;
+  height: 64px;
+
+  margin-top: 10px;
+  background-color: rgba(0, 0, 0, 0.6);
+  transform: skew(-2deg);
+  border-radius: 15px;
+}
+
+.slots .single-slot img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+
+  margin-top: -15px;
+
+  height: 60px;
+  width: 60px;
+
+  transition: 1.5s;
+}
+
+/* .slots-text {
+  position: absolute;
+
+  width: 15.5px;
+  height: 15.5px;
+  left: -10%;
+  top: -10%;
+
+  transform: skew(-3deg);
+
+  border: 2px solid;
+  border-image-slice: 1;
+  border-image-source: linear-gradient(
+    90deg,
+    #ffae00 0%,
+    #ffae00 100%
+  );
+} */
+
+.slots-text {
+  transform: skew(-6deg);
+  position: relative;
+  text-align: center;
+  color: rgb(255, 255, 255, 0.9);
+  font-size: 15px;
+  font-weight: bolder;
+  font-family: 'Kanit', sans-serif;
+  text-align: center;
+  bottom: 2px;
+  left: -2px;
+  border: 1px solid #ffae00;
+  border-radius: 6px;
+  width: 15px;
+  height: 15px;
+  /* background-color: linear-gradient(#ffae00; */
+  background: linear-gradient(
+    -45deg,
+    rgba(255, 174, 0, 0.863),
+    rgba(255, 174, 0, 0.863) 45%,
+    #ffae00
+  );
+}
+
+
+.slots-text h3 {
+  transform: skew(-6deg);
+  margin: 0 0 0;
+
+  text-align: center;
+  font-size: 15px;
+
+  margin-top: -1px;
+  margin-right: 1px;
+
+  color: white;
+  font-family: "Kanit", sans-serif;
+}
